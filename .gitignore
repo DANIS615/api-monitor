@@ -56,6 +56,13 @@ ehthumbs.db
 *.blockmap
 builder-effective-config.yaml
 
+# Claude Code configuration (no compartir)
+.claude/
+
+# Archivos de documentación temporal
+GITHUB-SETUP.md
+BUILD-INSTRUCTIONS.md
+
 # NO ignorar build/ porque contiene los iconos!
 !build/
 !build/*.ico
