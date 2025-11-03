@@ -83,7 +83,7 @@ Recomendados:
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/TU-USUARIO/api-monitor.git
+git clone https://github.com/DANIS615/api-monitor.git
 cd api-monitor
 
 # Instalar dependencias
@@ -257,10 +257,10 @@ Construido con tecnologías increíbles:
 
 ## 📊 Estadísticas del Proyecto
 
-![GitHub stars](https://img.shields.io/github/stars/TU-USUARIO/api-monitor?style=social)
-![GitHub forks](https://img.shields.io/github/forks/TU-USUARIO/api-monitor?style=social)
-![GitHub issues](https://img.shields.io/github/issues/TU-USUARIO/api-monitor)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/TU-USUARIO/api-monitor)
+![GitHub stars](https://img.shields.io/github/stars/DANIS615/api-monitor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/DANIS615/api-monitor?style=social)
+![GitHub issues](https://img.shields.io/github/issues/DANIS615/api-monitor)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/DANIS615/api-monitor)
 
 ---
 
