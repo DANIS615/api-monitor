@@ -49,14 +49,16 @@
 
 ### Windows (10/11)
 
-**📥 Descarga directa:**
+**📥 [DESCARGAR ÚLTIMA VERSIÓN →](https://github.com/DANIS615/api-monitor/releases/latest)**
 
-| Versión | Tamaño | Descarga |
-|---------|--------|----------|
-| **Instalador** | 76 MB | [⬇️ API Monitor-Setup-1.0.0.exe](downloads/API%20Monitor-Setup-1.0.0.exe) |
-| **Portable** | 76 MB | [⬇️ API Monitor-Portable-1.0.0.exe](downloads/API%20Monitor-Portable-1.0.0.exe) |
+| Versión | Tamaño | Descripción |
+|---------|--------|-------------|
+| **API Monitor-Setup-1.0.0.exe** | 76 MB | Instalador completo con accesos directos |
+| **API Monitor-Portable-1.0.0.exe** | 76 MB | Versión portable (no requiere instalación) |
 
 > 💡 **Recomendado**: Instalador para uso permanente, Portable para probar o llevar en USB
+>
+> 👉 Ve a [Releases](https://github.com/DANIS615/api-monitor/releases) para descargar
 
 ### Requisitos del Sistema
 
