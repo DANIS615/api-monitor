@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+release/
+out/
+
+# Electron
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Testing
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Windows
+$RECYCLE.BIN/
+ehthumbs.db
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# electron-builder
+*.blockmap
+builder-effective-config.yaml
+
+# NO ignorar build/ porque contiene los iconos!
+!build/
+!build/*.ico
+!build/*.icns
+!build/*.png
+!build/*.svg

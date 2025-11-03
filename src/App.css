@@ -1,0 +1,63 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+}
+
+.app-header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app-logo {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 0 10px rgba(74, 158, 255, 0.3));
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px rgba(74, 158, 255, 0.3));
+  }
+  to {
+    filter: drop-shadow(0 0 20px rgba(0, 212, 170, 0.5));
+  }
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: #4a9eff;
+  margin: 0 0 5px 0;
+  text-shadow: 0 0 10px rgba(74, 158, 255, 0.3);
+}
+
+.app-header p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+

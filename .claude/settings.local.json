@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec -i clinic_postgres_dev psql -U postgres -d clinic_db_dev -c \"SELECT id FROM clinics LIMIT 1;\")",
+      "Bash(curl -X GET \"http://localhost:3000/api/v1/doctors?clinicId=00000000-0000-0000-0000-000000000001\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\")",
+      "Bash(curl -X GET \"http://localhost:3000/api/v1/doctors/93f7288c-6a60-4a38-9c3b-9717ff7373f2\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\")",
+      "Bash(curl -X POST \"http://localhost:3000/api/v1/doctors/93f7288c-6a60-4a38-9c3b-9717ff7373f2/availability\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\" -H \"Content-Type: application/json\" -d @\"C:\\Users\\Controlador\\Desktop\\crm medico\\scripts\\test-set-availability.json\")",
+      "Bash(curl -X GET \"http://localhost:3000/api/v1/doctors/availability?doctorId=93f7288c-6a60-4a38-9c3b-9717ff7373f2\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\")",
+      "Bash(curl -X PUT \"http://localhost:3000/api/v1/doctors/93f7288c-6a60-4a38-9c3b-9717ff7373f2\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\" -H \"Content-Type: application/json\" -d \"{\"\"consultationFee\"\":200,\"\"yearsOfExperience\"\":20}\")",
+      "Bash(curl -X POST \"http://localhost:3000/api/v1/doctors/93f7288c-6a60-4a38-9c3b-9717ff7373f2/deactivate\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\")",
+      "Bash(curl -X POST \"http://localhost:3000/api/v1/doctors/93f7288c-6a60-4a38-9c3b-9717ff7373f2/activate\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk2ODcyMCwiZXhwIjoxNzYxMDU1MTIwfQ.Kw_OHN7VEpbUcZVkGuSeMlAiowQLvMabEApm6YVlNws\")",
+      "Bash(docker exec -i clinic_postgres_dev psql -U postgres -d clinic_db_dev -c \"\\d appointments\")",
+      "Bash(docker exec -i clinic_postgres_dev psql -U postgres -d clinic_db_dev -c \"SELECT id, \"\"firstName\"\", \"\"lastName\"\" FROM patients LIMIT 1;\")",
+      "Bash(curl -X POST http://localhost:3000/api/v1/doctors -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk4Njg1MCwiZXhwIjoxNzYxMDczMjUwfQ.uIRlpV2pv-r51lsFQ8uS7yudzAo6Fm8yazf2n2j_mRE\" -H \"Content-Type: application/json\" -d \"{\"\"clinicId\"\":\"\"00000000-0000-0000-0000-000000000001\"\",\"\"firstName\"\":\"\"Dr. Juan\"\",\"\"lastName\"\":\"\"Perez\"\",\"\"email\"\":\"\"dr.juan@clinic.com\"\",\"\"phone\"\":\"\"+1234567890\"\",\"\"specialization\"\":\"\"Cardiology\"\",\"\"licenseNumber\"\":\"\"LIC123456\"\",\"\"consultationFee\"\":150.00,\"\"yearsOfExperience\"\":10,\"\"languages\"\":[\"\"Spanish\"\",\"\"English\"\"],\"\"bio\"\":\"\"Cardiologist with 10 years of experience\"\"}\")",
+      "Bash(curl -X POST http://localhost:3000/api/v1/appointments -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk4Njg1MCwiZXhwIjoxNzYxMDczMjUwfQ.uIRlpV2pv-r51lsFQ8uS7yudzAo6Fm8yazf2n2j_mRE\" -H \"Content-Type: application/json\" -d @\"C:\\Users\\Controlador\\Desktop\\crm medico\\scripts\\test-create-appointment.json\")",
+      "Bash(docker exec -i clinic_postgres_dev psql -U postgres -d clinic_db_dev -c \"SELECT id, email FROM users LIMIT 3;\")",
+      "Bash(curl -X POST \"http://localhost:3000/api/v1/appointments/fda9f4ab-68c2-4059-8ea9-95150fae059e/reschedule\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxY2VkZTNiYS04Y2QzLTQxNDktODM0ZS1kZGU3OGQ1YmVmNTMiLCJlbWFpbCI6InRlc3RAY2xpbmljLmNvbSIsImlhdCI6MTc2MDk4Njg1MCwiZXhwIjoxNzYxMDczMjUwfQ.uIRlpV2pv-r51lsFQ8uS7yudzAo6Fm8yazf2n2j_mRE\" -H \"Content-Type: application/json\" -d \"{\"\"newAppointmentDate\"\":\"\"2025-10-26T14:00:00Z\"\",\"\"reason\"\":\"\"Patient requested different time\"\"}\")",
+      "Bash(npm run dev:*)",
+      "Bash(docker-compose:*)",
+      "Bash(npm run start:dev:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(curl:*)",
+      "Bash(docker exec:*)",
+      "Bash(npm run build:*)",
+      "Bash(timeout:*)",
+      "Bash(ping:*)",
+      "Bash(cmd //c \"taskkill /PID 23800 /F\")",
+      "Bash(cmd //c:*)",
+      "Bash(npm install:*)",
+      "Bash(electron-builder:*)",
+      "Bash(npx electron-builder --win --x64)",
+      "Bash(npx electron-builder:*)",
+      "Bash(cat:*)",
+      "Bash(del nul 2)",
+      "Bash(nul)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
