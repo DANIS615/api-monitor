@@ -3,7 +3,7 @@ node_modules/
 package-lock.json
 yarn.lock
 
-# Build outputs
+# Build outputs (temporales)
 dist/
 release/
 out/
@@ -63,9 +63,13 @@ builder-effective-config.yaml
 GITHUB-SETUP.md
 BUILD-INSTRUCTIONS.md
 
-# NO ignorar build/ porque contiene los iconos!
+# NO ignorar estas carpetas importantes!
 !build/
 !build/*.ico
 !build/*.icns
 !build/*.png
 !build/*.svg
+
+# Carpeta de descargas públicas (NO ignorar)
+!downloads/
+!downloads/*.exe

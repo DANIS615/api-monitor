@@ -49,12 +49,14 @@
 
 ### Windows (10/11)
 
-Descarga la última versión desde [Releases](../../releases/latest):
+**📥 Descarga directa:**
 
-| Versión | Tamaño | Descripción |
-|---------|--------|-------------|
-| **Instalador** | ~76 MB | Instalación completa con accesos directos y desinstalador |
-| **Portable** | ~76 MB | Ejecutable sin instalación, ideal para USB |
+| Versión | Tamaño | Descarga |
+|---------|--------|----------|
+| **Instalador** | 76 MB | [⬇️ API Monitor-Setup-1.0.0.exe](downloads/API%20Monitor-Setup-1.0.0.exe) |
+| **Portable** | 76 MB | [⬇️ API Monitor-Portable-1.0.0.exe](downloads/API%20Monitor-Portable-1.0.0.exe) |
+
+> 💡 **Recomendado**: Instalador para uso permanente, Portable para probar o llevar en USB
 
 ### Requisitos del Sistema
 
